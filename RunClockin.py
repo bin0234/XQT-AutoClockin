@@ -45,7 +45,7 @@ class RunClockin:
             
             while not is_current_user_shixi_clockin_success and retry_count > 0:
                 #is_current_user_shixi_clockin_success = ClockinShixi(self._log, user).clockin() 暂时不需要实习打卡
-                is_current_user_shixi_clockin_success = true
+                is_current_user_shixi_clockin_success = True
                 retry_count -= 1
             self._log.get_logger().info(LANGUAGE.get_message('split_line'))
             
